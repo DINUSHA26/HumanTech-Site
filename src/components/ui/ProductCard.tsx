@@ -10,17 +10,19 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className="group relative bg-white rounded-3xl p-8 pt-12 shadow-sm border border-slate-100/50 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center hover:-translate-y-2 mt-8">
-      {/* Floating Image Wrapper */}
-      <div className="relative w-44 h-44 -mt-24 mb-6 transition-transform duration-500 group-hover:scale-105 select-none">
-        <Image
-          src={product.image}
-          alt={product.title}
-          fill
-          sizes="(max-width: 768px) 150px, 180px"
-          className="object-contain"
-          priority
-        />
+    <div className="group relative bg-white rounded-3xl p-8 shadow-sm border border-slate-100/50 hover:shadow-xl transition-all duration-300 flex flex-col items-start hover:-translate-y-1.5">
+      {/* Image Wrapper */}
+      <div className="relative w-full h-60 mb-6 flex items-center justify-center select-none">
+        <div className="relative w-56 h-56 transition-transform duration-500 group-hover:scale-105">
+          <Image
+            src={product.image}
+            alt={product.title}
+            fill
+            sizes="(max-width: 768px) 200px, 224px"
+            className="object-contain"
+            priority
+          />
+        </div>
       </div>
 
       {/* Content */}

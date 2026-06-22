@@ -27,7 +27,7 @@ export const PRODUCT_ITEMS: ProductItem[] = [
     id: 'wellness-essentials',
     title: 'Wellness Essentials',
     description: 'Premium, pure wellness essentials curated specifically to boost immunity and support daily vitality for seniors.',
-    image: '/images/product/omega.jpeg',
+    image: '/images/product/omega-3.png',
     href: '/store',
     price: 'Rs. 3,500',
     features: ['High-absorption formula', 'Immunity enhancement', 'Sustainably sourced', 'Batch purity tested'],

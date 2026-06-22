@@ -7,11 +7,11 @@ export default function ProductsSection() {
   const header = PRODUCTS_SECTION_HEADER;
 
   return (
-    <section className="bg-bg-light py-20 px-6 md:px-12" id="products">
+    <section className="bg-bg-light py-12 px-6 md:px-12" id="products">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in-up">
+        <div className="text-center max-w-3xl mx-auto mb-10 animate-fade-in-up">
           <SectionBadge align="center" color="teal">
             {header.badge}
           </SectionBadge>
@@ -24,7 +24,7 @@ export default function ProductsSection() {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-2">
           {PRODUCT_ITEMS.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

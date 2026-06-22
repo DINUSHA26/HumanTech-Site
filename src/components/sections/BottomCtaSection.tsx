@@ -20,7 +20,7 @@ export default function BottomCtaSection({
   overlayClassName,
 }: BottomCtaSectionProps) {
   return (
-    <section className="relative py-28 px-6 md:px-12 bg-neutral-900 text-white overflow-hidden">
+    <section className="relative py-20 px-6 md:px-12 bg-neutral-900 text-white overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image

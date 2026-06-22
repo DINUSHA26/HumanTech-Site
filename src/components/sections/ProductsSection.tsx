@@ -1,23 +1,25 @@
 import React from 'react';
 import SectionBadge from '../ui/SectionBadge';
 import ProductCard from '../ui/ProductCard';
-import { PRODUCT_ITEMS } from '@/lib/constants';
+import { PRODUCT_ITEMS, PRODUCTS_SECTION_HEADER } from '@/config/products';
 
 export default function ProductsSection() {
+  const header = PRODUCTS_SECTION_HEADER;
+
   return (
-    <section className="bg-bg-light py-24 px-6 md:px-12" id="products">
+    <section className="bg-bg-light py-20 px-6 md:px-12" id="products">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in-up">
           <SectionBadge align="center" color="teal">
-            Smart Tech & Wellness
+            {header.badge}
           </SectionBadge>
           <h2 className="text-3xl md:text-4xl font-extrabold text-neutral-dark mb-4 mt-2">
-            The Smart Home Health Companion
+            {header.title}
           </h2>
           <p className="text-sm sm:text-base text-neutral-dark/75 leading-relaxed">
-            You can't be in the room every second, but the right technology can. Our curated online store features advanced wellness devices designed to keep your family safe, healthy, and connected.
+            {header.description}
           </p>
         </div>
 

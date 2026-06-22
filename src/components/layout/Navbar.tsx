@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Phone } from 'lucide-react';
-import { NAV_LINKS } from '@/lib/constants';
+import { NAV_LINKS } from '@/config/navigation';
 import Button from '../ui/Button';
 import { cn } from '@/lib/utils';
 
@@ -45,7 +45,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 group">
           <div className="relative w-8 h-8 md:w-9 md:h-9 transition-transform duration-300 group-hover:rotate-6">
             <Image
-              src="/Logo-2.png"
+              src="/images/icon/logo-color.png"
               alt="HumanTec Logo"
               fill
               className="object-contain"
